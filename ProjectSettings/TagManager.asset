@@ -7,6 +7,8 @@ TagManager:
   - wall
   - void
   - MainCube
+  - Portal
+  - MusicManager
   layers:
   - Default
   - TransparentFX
@@ -43,4 +45,28 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: void
+    uniqueID: 2242904781
+    locked: 0
+  - name: gameBackImage
+    uniqueID: 1361865367
+    locked: 0
+  - name: Hart
+    uniqueID: 2515714935
+    locked: 0
+  - name: wall
+    uniqueID: 2271422585
+    locked: 0
+  - name: portal
+    uniqueID: 3529031507
+    locked: 0
+  - name: CubeChangerDirection
+    uniqueID: 2574256303
+    locked: 0
+  - name: RotateIcon
+    uniqueID: 3429338705
+    locked: 0
+  - name: mainCube
+    uniqueID: 3369872171
     locked: 0

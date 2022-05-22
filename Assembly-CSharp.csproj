@@ -53,13 +53,19 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\ChangeDirectionScript.cs" />
+     <Compile Include="Assets\Script\PortalScript.cs" />
      <Compile Include="Assets\Script\ScreenManager.cs" />
+     <Compile Include="Assets\Script\RotateScript.cs" />
+     <Compile Include="Assets\Script\RotateCubeScript.cs" />
+     <Compile Include="Assets\Script\SettingManagerScript.cs" />
      <Compile Include="Assets\Script\MoveCubeScript.cs" />
      <Compile Include="Assets\Script\MainCubeScript.cs" />
      <Compile Include="Assets\Script\VoidScript.cs" />
      <Compile Include="Assets\Script\GridManagerScript.cs" />
-     <Compile Include="Assets\Script\GridMovementManagerScript.cs" />
+     <Compile Include="Assets\Script\SoundManagerScript.cs" />
+     <Compile Include="Assets\Script\MusicManagerScript.cs" />
      <Compile Include="Assets\Script\finishScript.cs" />
+     <Compile Include="Assets\Script\GridMovementManagerScript.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

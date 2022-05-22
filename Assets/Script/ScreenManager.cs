@@ -8,8 +8,14 @@ using UnityEngine.SceneManagement;
 public class ScreenManager : MonoBehaviour {
     public static bool pause=true;
     public static bool finish = false;
+    public static GameObject screenManager;
     public GameObject back;
+    public char initDirectionOfMainCube;
+    public int nextLevel;
     private Animator anim;
+
+    public static bool rePlayMusic = false;
+    
     IEnumerator show() {
         pause = true;
         anim.SetBool("show", true);
@@ -17,7 +23,14 @@ public class ScreenManager : MonoBehaviour {
         back.SetActive(false);
         pause = false;
     }
+
+    void Awake() {
+        MainCubeScript._direction = initDirectionOfMainCube;
+        MainCubeScript.nextLevel = nextLevel;
+    }
+
     void Start() {
+        screenManager = gameObject;
         anim = back.GetComponent<Animator>();
         StartCoroutine(show());
     }
@@ -30,7 +43,23 @@ public class ScreenManager : MonoBehaviour {
         SceneManager.LoadScene(index);
         ScreenManager.finish = false;
     }
+    public void _Go(int index) {
+        //Debug.Log(index+" "+SceneManager.GetActiveScene().buildIndex);
+        if(index!=SceneManager.GetActiveScene().buildIndex &&
+           MusicManagerScript.musicManager != null) {
+            Destroy(MusicManagerScript.musicManager);
+        }
+        rePlayMusic = (index != SceneManager.GetActiveScene().buildIndex);
+        StartCoroutine(hide(index));
+    }
+    
     public void Go(int index) {
+        if (index!=SceneManager.GetActiveScene().buildIndex &&
+            MusicManagerScript.musicManager != null) {
+            Destroy(MusicManagerScript.musicManager);
+        }
+        rePlayMusic = (index != SceneManager.GetActiveScene().buildIndex);
+        SoundManagerScript.playClickButtonSound();
         StartCoroutine(hide(index));
     }
 

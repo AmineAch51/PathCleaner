@@ -72,11 +72,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2023544711
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -4181779087990205113, guid: b1d532294a7600a4d8cdb7e78126da44, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3399d2a7e92fb2c40bfd8092817b874e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _screenManager: {fileID: 0}
 --- !u!1 &7014257462921365662
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,6 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7014257462921365656}
   - component: {fileID: 7014257462921365663}
+  - component: {fileID: 4736002442250308253}
   m_Layer: 0
   m_Name: hart
   m_TagString: Untagged
@@ -213,8 +215,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1779252361
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -5115014299929153556, guid: cb17f48fde977be43afd008e003b774b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -227,3 +229,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4736002442250308253
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014257462921365662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 636ab26a963b68d428b6473598bffb33, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

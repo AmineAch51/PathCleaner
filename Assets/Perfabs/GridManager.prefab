@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8081003226681364870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8081003226681364864}
+  - component: {fileID: 8081003226681364865}
+  m_Layer: 0
+  m_Name: GridManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8081003226681364864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081003226681364870}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.2, y: -0.67, z: -38.580303}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8081003226681364865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081003226681364870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0894def37c7155549a13661488ed430f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelIndex: 1
+  _void: {fileID: 5563941583059222197, guid: 8b460d21ccd925a4394ba96fac44c5c3, type: 3}
+  _wall: {fileID: 8662813367744139087, guid: 5e7b161e5a7b88e4c8e6e2ea424dd409, type: 3}
+  _mainCube: {fileID: 6688770925362126135, guid: a80cd60e3d7d90446919a2779a5592c4, type: 3}
+  _goUp: {fileID: 4291819054305110217, guid: f8f5a6bafeaa08e4b95fa661c51881e9, type: 3}
+  _goDown: {fileID: 5497201743061611321, guid: 91aea8eec681dcd478dd60e483848a07, type: 3}
+  _goRight: {fileID: 2771798176533428775, guid: 663b1813a001c414d84d095b90dcbaed, type: 3}
+  _goLeft: {fileID: 8604867653296598477, guid: 53173b1f05cbdd14687e5b12d7c512fb, type: 3}
+  _finish: {fileID: 3143767099531806793, guid: 904bb94783fcb71449f70e4bc9091ecf, type: 3}
+  _portal: {fileID: 1138212967649580985, guid: 1ad5cbabc11e890468ff49d66f435f8f, type: 3}
+  cam: {fileID: 0}

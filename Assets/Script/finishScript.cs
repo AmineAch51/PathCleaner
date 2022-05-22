@@ -16,18 +16,20 @@ public class finishScript : MonoBehaviour {
         if(ScreenManager.finish) {
             return;
         }
-        if (mainCube!=null && 
+        if (!(MainCubeScript.mainCube==null ||
+              MainCubeScript.mainCube.GetComponent<MainCubeScript>().isBlocked) &&
+            mainCube!=null && 
             mainCube.transform.position.x== transform.position.x && 
             mainCube.transform.position.y==transform.position.y) {
             mainCube = null;
             ScreenManager.finish = true;
-            _screenManager.GetComponent<ScreenManager>().Go(0);
+            _screenManager.GetComponent<ScreenManager>()._Go(MainCubeScript.nextLevel);
             Destroy(gameObject);
         }
     }
 
-    void OnTriggerStay2D(Collider2D col) {
-        if (col.CompareTag("MainCube")){
+    void OnTriggerEnter2D(Collider2D col) {
+        if (col.CompareTag("MainCube")) {
             mainCube = col.gameObject;
             // col.gameObject.GetComponent<MainCubeScript>().addDirection(direction);
             // Destroy(gameObject, 0.6f); // Kill your self after 2 seconds

@@ -5,26 +5,32 @@ using UnityEngine;
 
 public class GridMovementManagerScript : MonoBehaviour {
     public static GameObject movedObject;
-    public static Transform newPlace;
-    private bool youCanMove = false;
-    void Update() {
-        if (Input.GetMouseButtonDown(0)) {
-            youCanMove = true;
-        }
+    // public static Transform newPlace;
+    // public bool youCanMove = false;
+    // public static GameObject gridMovement;
+    void Start() {
+        //gridMovement = gameObject;
+    }
+
+    //void Update() {
+        // if (Input.GetMouseButtonDown(0)) {
+        //     youCanMove = true;
+        // }
+        //
+        // if (Input.GetMouseButtonUp(0)) {
+        //     youCanMove = false;
+        // }
         
-        if (Input.GetMouseButtonUp(0)) {
-            youCanMove = false;
-        }
+        // if (youCanMove && movedObject != null){
+        //     /* Follow camera script */
+        //     mousePosition = Input.mousePosition;
+        //     mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        //     Vector3 vec3 = Vector2.Lerp(movedObject.transform.position, mousePosition, 5f);
+        //     vec3.z = -2f;
+        //     movedObject.transform.position = vec3;
+        //     
+        // }
         
-        if (youCanMove && movedObject != null){
-            /* Follow camera script */
-            // mousePosition = Input.mousePosition;
-            // mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-            // Vector3 vec3 = Vector2.Lerp(movedObject.transform.position, mousePosition, 5f);
-            // vec3.z = -2f;
-            // movedObject.transform.position = vec3;
-            
-        }
         // if (Input.GetMouseButtonDown(1)) {
         //     Debug.Log("Pressed secondary button.");
         // }
@@ -32,5 +38,5 @@ public class GridMovementManagerScript : MonoBehaviour {
         // if (Input.GetMouseButtonDown(2)) {
         //     Debug.Log("Pressed middle click.");
         // }
-    }
+    //}
 }
